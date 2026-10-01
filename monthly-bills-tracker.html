@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monthly Bills Tracker Printable: Never Miss a Due Date | Hearthside Printables</title>
+<meta name="description" content="A free printable monthly bills tracker. List every bill, amount, and due date on one page — plus a simple monthly routine that ends late fees for good.">
+<link rel="canonical" href="https://dakotamccall200-create.github.io/hearthside-printables/monthly-bills-tracker.html">
+<style>
+@font-face{font-family:'Bebas Neue';src:url('fonts/BebasNeue.ttf') format('truetype');font-display:swap}
+@font-face{font-family:'Montserrat';src:url('fonts/Montserrat.ttf') format('truetype');font-display:swap}
+@font-face{font-family:'Caveat';src:url('fonts/Caveat.ttf') format('truetype');font-display:swap}
+:root{--green:#24523f;--green-dark:#183a2c;--terra:#b2603a;--cream:#faf6ee;--paper:#fffdf8;--ink:#2c2620;--muted:#6f655a;--line:#e5dccb}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Montserrat',system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--cream);color:var(--ink);line-height:1.7;font-size:17px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:'Bebas Neue','Arial Narrow',sans-serif;font-weight:400;letter-spacing:.5px;line-height:1.15;color:var(--green-dark)}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--terra)}
+.site-header{background:var(--green);padding:14px 0;position:sticky;top:0;z-index:50}
+.site-header .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px}
+.brand{font-family:'Bebas Neue',sans-serif;font-size:30px;color:#fff;text-decoration:none;letter-spacing:1px}
+.brand span{color:#f3c96b}
+.site-header nav{display:flex;flex-wrap:wrap;gap:4px 18px}
+.site-header nav a{color:#e9f2ec;text-decoration:none;font-size:14px}
+.site-header nav a:hover{color:#f3c96b}
+.hero{background:var(--green);color:#fff;padding:56px 0 64px;text-align:center}
+.hero h1{color:#fff;font-size:clamp(44px,7vw,76px);margin-bottom:12px}
+.hero p.sub{font-size:19px;max-width:640px;margin:0 auto 26px;color:#dcebe1}
+.btn{display:inline-block;background:var(--terra);color:#fff!important;text-decoration:none;padding:14px 30px;border-radius:10px;font-weight:700;font-size:16px;border:none;cursor:pointer}
+.btn:hover{background:#9a4f2d}
+.btn.ghost{background:transparent;border:2px solid #fff}
+.btn-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+main{padding:40px 0}
+.section{margin-bottom:56px}
+.section>h2{font-size:38px;margin-bottom:8px;text-align:center}
+.section>p.lead{text-align:center;color:var(--muted);max-width:680px;margin:0 auto 28px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.card img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.card .pad{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card h3{font-size:26px}
+.card .price{font-weight:700;color:var(--terra);font-size:18px}
+.card p{font-size:15px;color:var(--muted)}
+.card .btn{margin-top:auto;text-align:center}
+.article{max-width:760px;margin:0 auto;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:clamp(24px,5vw,52px)}
+.article h1{font-size:clamp(38px,6vw,58px);margin-bottom:14px}
+.article h2{font-size:32px;margin:34px 0 12px}
+.article h3{font-size:24px;margin:24px 0 8px}
+.article p,.article li{margin-bottom:14px}
+.article ul,.article ol{padding-left:24px}
+.article .meta{color:var(--muted);font-size:14px;margin-bottom:24px}
+.freebies{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin:22px 0}
+.freebie{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;text-align:center}
+.freebie img{aspect-ratio:17/22;object-fit:cover;width:100%}
+.freebie .pad{padding:14px}
+.freebie h3{font-size:22px;margin-bottom:6px}
+.freebie p{font-size:14px;color:var(--muted);margin-bottom:10px}
+.cta{background:var(--green);color:#fff;border-radius:16px;padding:36px clamp(24px,5vw,48px);text-align:center;margin-top:44px}
+.cta h2{color:#fff;font-size:36px;margin-bottom:10px}
+.cta p{color:#dcebe1;max-width:620px;margin:0 auto 20px}
+.cta .btn-row .btn{background:var(--terra)}
+.related{margin-top:40px;padding-top:24px;border-top:2px solid var(--line)}
+.related h2{font-size:28px;margin-bottom:12px}
+.related ul{list-style:none;padding:0;display:grid;gap:8px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:24px}
+.step{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:24px;text-align:center}
+.step .num{font-family:'Caveat',cursive;font-size:44px;color:var(--terra)}
+.step h3{font-size:24px;margin:6px 0}
+.faq{max-width:760px;margin:0 auto}
+.faq details{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin-bottom:12px}
+.faq summary{font-weight:700;cursor:pointer;font-size:17px}
+.faq details p{margin-top:10px;color:var(--muted)}
+.site-footer{background:var(--green-dark);color:#cfe0d4;padding:36px 0;margin-top:40px;font-size:14px}
+.site-footer .wrap{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between}
+.site-footer a{color:#f3c96b;text-decoration:none}
+.site-footer nav{display:flex;flex-wrap:wrap;gap:6px 16px}
+.breadcrumb{font-size:14px;color:var(--muted);margin-bottom:18px}
+.breadcrumb a{color:var(--terra)}
+@media(max-width:640px){body{font-size:16px}.site-header nav a{font-size:13px}}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="index.html"><span>&#10033;</span> Hearthside Printables</a>
+<nav><a href="index.html">Home</a><a href="free-printable-budget-tracker.html">Budget Tracker</a><a href="printable-cleaning-schedule.html">Cleaning Schedule</a><a href="toddler-tracing-worksheets.html">Tracing Worksheets</a><a href="christmas-coloring-pages.html">Christmas Coloring</a><a href="weekly-meal-planner-printable.html">Meal Planner</a><a href="monthly-bills-tracker.html">Bills Tracker</a></nav></div></header>
+<main><div class="wrap">
+<div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Monthly Bills Tracker</div>
+<article class="article">
+<p class="meta">Free printable &middot; Updated October 2026 &middot; US Letter PDF</p>
+<h1>Monthly Bills Tracker Printable: Never Miss a Due Date</h1>
+<p>Late fees are the most expensive subscription nobody signed up for. A single missed payment can cost $25 to $40 in fees, and that's before the interest and the credit-score damage. Most late payments aren't caused by not having the money — they're caused by not having a system. Bills arrive by mail, by email, by app notification, and by autopay, scattered across so many channels that it's genuinely hard to keep track of what's due when.</p>
+<p>A monthly bills tracker solves this by putting every bill in one visible place: the name, the amount, the due date, and a checkbox for when it's paid. One page, one month, everything accounted for. Print it, fill it in on the first of the month, and check things off as you pay. It's gloriously low-tech, and that's the point — it works even when your phone is dead and your inbox has 400 unread messages.</p>
+<h2>How to use the bills tracker</h2>
+<ol>
+<li><strong>List every recurring bill.</strong> Go through the last two months of bank statements and write down everything: rent or mortgage, utilities, phone, internet, insurance, subscriptions, loan payments, credit cards. The statement sweep catches the forgotten ones — the annual subscriptions and quarterly bills that ambush you.</li>
+<li><strong>Write the amount and due date.</strong> For fixed bills, write the exact amount. For variable ones like electric or credit cards, write last month's amount as a placeholder and update it when the bill arrives.</li>
+<li><strong>Sort by due date.</strong> Rewrite the list in due-date order if it isn't already. Seeing bills in calendar order turns the page into a timeline — you can spot the expensive weeks before they hit.</li>
+<li><strong>Check the "paid" box the moment you pay.</strong> Not at the end of the day, not tomorrow — immediately. The checkbox is the system; an unchecked box at month's end is a bill you need to chase down right now.</li>
+<li><strong>Total it at the bottom.</strong> Add up everything due this month and write it in the total box. Knowing the full number upfront lets you plan the month's cash flow instead of discovering it one bill at a time.</li>
+</ol>
+<h2>The monthly bill-review routine</h2>
+<p>The tracker isn't just a checklist — it's a monthly audit. On the first of each month, spend fifteen minutes with last month's sheet and ask three questions. <strong>Did anything go up?</strong> Rate hikes hide in autopay; the tracker makes them visible when you write the new amount. <strong>Is anything still unchecked?</strong> Follow up immediately — a bill that's a month late needs a phone call, not a hope. <strong>Can anything be cut?</strong> Subscriptions multiply quietly. If you can't remember the last time you used it, cancel it.</p>
+<p>This routine also catches billing errors. Wrong amounts stand out when you're writing them down deliberately instead of glancing at a statement. A ten-minute review that catches one $30 error has paid for a year of printing.</p>
+<h2>Autopay plus a tracker: the safest combo</h2>
+<p>Autopay prevents late fees, but autopay alone isn't a system — it's a hope that nothing changes. Amounts change. Cards expire. Accounts run short. The safest setup is autopay <em>plus</em> the tracker: let autopay handle the payment, and use the tracker to verify it happened and record the amount. Check each box when you confirm the payment cleared, not when you assume it did. It takes two minutes and closes the loop that autopay leaves open.</p>
+<p>One caution: only put fixed, predictable bills on full autopay. Variable bills — credit cards, utilities — are better on reminder-autopay or manual pay with the tracker, so a surprisingly large bill gets your eyes on it before the money leaves.</p>
+<h2>Download your free printables</h2>
+<p>Get the free one-page bills-due tracker below, plus the free monthly budget tracker it pairs with — bills tell you what's due, the budget tells you whether the month works.</p>
+<div class="freebies"><div class="freebie"><img src="freebies/bills-due-sample-preview.png" alt="Free Bills-Due Tracker — preview" loading="lazy">
+<div class="pad"><h3>Free Bills-Due Tracker</h3><p>One-page bill, amount, due-date, and paid-checkoff table (PDF, US Letter).</p>
+<a class="btn" href="freebies/bills-due-sample.pdf" download>Download free PDF</a></div></div><div class="freebie"><img src="freebies/budget-tracker-sample-preview.png" alt="Free Monthly Budget Tracker — preview" loading="lazy">
+<div class="pad"><h3>Free Monthly Budget Tracker</h3><p>One-page income, expenses, and money-left worksheet (PDF, US Letter).</p>
+<a class="btn" href="freebies/budget-tracker-sample.pdf" download>Download free PDF</a></div></div></div>
+<p style="margin-top:18px">The paid <strong>Family Planner Pack</strong> includes an expanded bills-due tracker with more rows, alongside the weekly meal planner, budget tracker, and cleaning schedule.</p>
+<div class="cta"><h2>Get the full printable packs</h2><p>The free tracker covers the month. Pair it with the Family Planner Pack or the Spreadsheet Template Bundle for the full financial picture.</p>
+<div class="btn-row"><a class="btn" href="https://payhip.com/b/eFuwj">Family Planner Pack — $8</a><a class="btn" href="https://payhip.com/b/AUfF5">Money OS Bundle — $35</a></div></div><div class="related"><h2>Related free printable guides</h2><ul><li><a href="free-printable-budget-tracker.html">Free Printable Budget Tracker (Monthly One-Page Worksheet)</a></li><li><a href="weekly-meal-planner-printable.html">Weekly Meal Planner Printable (Free One-Page Template)</a></li><li><a href="printable-cleaning-schedule.html">Printable Cleaning Schedule: Daily, Weekly & Monthly Checklist</a></li></ul></div></article>
+</div></main>
+<footer class="site-footer"><div class="wrap">
+<div><strong style="color:#fff">Hearthside Printables</strong><br>Free printables and printable planner packs.<br>&copy; 2026 Hearthside Printables. For personal use only.</div>
+<nav><a href="index.html">Home</a><a href="free-printable-budget-tracker.html">Budget Tracker</a><a href="printable-cleaning-schedule.html">Cleaning Schedule</a><a href="toddler-tracing-worksheets.html">Tracing Worksheets</a><a href="christmas-coloring-pages.html">Christmas Coloring</a><a href="weekly-meal-planner-printable.html">Meal Planner</a><a href="monthly-bills-tracker.html">Bills Tracker</a></nav></div></footer>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dakotamccall200-create.github.io/hearthside-printables/sitemap.xml
